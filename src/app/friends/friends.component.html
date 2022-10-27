@@ -1,0 +1,42 @@
+<div class="my-grid">
+  <div class="my-grid-item">
+    <div class="my-grid-inner-item my-grid-item-title">View Friends</div>
+    <div class="my-grid-inner-item my-grid-item-content">
+      <p>List all your friends</p>
+      <p><button (click)="viewFriends()">View friends &raquo;</button></p>
+    </div>
+  </div>
+  <div class="my-grid-item">
+    <div class="my-grid-inner-item my-grid-item-title">Add Friend</div>
+    <div class="my-grid-inner-item my-grid-item-content">
+      <p>Give the name and add to your list</p>
+      <p><input #friendToAdd type="text" /></p>
+      <p>
+        <button (click)="addFriend(friendToAdd.value)">
+          Add friend &raquo;
+        </button>
+      </p>
+    </div>
+  </div>
+  <div class="my-grid-item">
+    <div class="my-grid-inner-item my-grid-item-title">Remove Friend</div>
+    <div class="my-grid-inner-item my-grid-item-content">
+      <p>Want to break with friend? Remove him/her from your list</p>
+      <p><input #friendToRemove type="text" /></p>
+      <p>
+        <!-- <button (click)="removeFriend(friendToRemove.value)">
+			Remove friend &raquo;
+		  </button> -->
+      </p>
+    </div>
+  </div>
+  <div class="my-grid-item" *ngFor="let toto of friends">
+    <div class="my-grid-inner-item my-grid-item-title"></div>
+    <div class="my-grid-inner-item my-grid-item-content">
+      <p>
+        <img [src]="urlAvatar + myEncode(toto.name)" />
+      </p>
+      <p>{{ toto.name }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.my-grid-item {
+	display: inline-block;
+	min-width: 200px;
+	max-width: 300px;
+	padding: 10px;
+	height: 200px;
+	vertical-align: top;
+}
+
+.my-grid-item-title {
+	top: 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+button {
+	text-align: center;
+	margin-left: 2px;
+	margin-right: 2px;
+	height: 35px;
+	border-radius: 7px;
+	min-width: 80px;
+	color: black;
+	background-image: linear-gradient(lightgrey, white);
+	border: solid 1px lightgray;
+}
+
+button:hover {
+	cursor: pointer;
+}

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'qieam-front-webapp';
+  title = 'this is the new qieam-front-webapp';
 }
